@@ -1,0 +1,85 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.9rem 0;
+    color: $color-light;
+    z-index: 10;
+
+    transition-duration: $anim-time;
+
+    &.is-scroll {
+        background-color: #08203A;
+        padding: 1.2rem 0;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        padding: 2rem 0;
+    }
+}
+
+.header .container {
+    max-width: 125rem;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: $breakpoint-md) {
+        grid-template-columns: repeat(2, auto);
+        max-width: 32rem;
+        padding: 0;
+    }
+
+    @media screen and (max-width: $breakpoint-md) and (orientation: landscape) {
+        max-width: 60rem;
+        padding: 0 1rem;
+    }
+}
+
+.header__navigation {
+    @media screen and (max-width: $breakpoint-md) {
+        display: none;
+    }
+}
+
+.header__list {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3rem;
+}
+
+.header__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    letter-spacing: .03rem;
+
+    transition-duration: $anim-time;
+    transition-property: color;
+
+    &:hover {
+        color: $color-accent;
+    }
+}
+
+.header__btn {
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: 1.3rem 3.45rem;
+
+    @media screen and (max-width: $breakpoint-md) {
+        display: none;
+    }
+}
+
+.header__burger {
+    display: none;
+
+    @media screen and (max-width: $breakpoint-md) {
+        display: block;
+    }
+}

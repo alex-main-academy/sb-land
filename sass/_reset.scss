@@ -1,0 +1,74 @@
+// reset
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+img,
+svg {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    &::placeholder {
+        color: inherit;
+    }
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    font-family: inherit;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    /* Убирает спиннеры в Firefox */
+    -webkit-appearance: none;
+    /* Убирает спиннеры в Chrome, Safari, Edge */
+    appearance: none;
+    /* Убирает спиннеры в других браузерах, поддерживающих этот стиль */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

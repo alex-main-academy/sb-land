@@ -1,0 +1,93 @@
+.thanks {
+    position: relative;
+    min-height: 100svh;
+
+    background-image: url(../img/thanks/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+
+    @media screen and (max-width: $breakpoint-md) {
+        background-image: url(../img/thanks/bg-s.webp);
+        padding-top: 5.7rem;
+        padding-bottom: 9.7rem;
+        align-items: start;
+    }
+}
+
+.thanks .container {
+    position: relative;
+    z-index: 1;
+}
+
+.thanks__logo {
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 4.1rem;
+    margin-bottom: 4.5rem;
+
+    .logo__text {
+        font-size: 4.1rem;
+
+        b {
+            font-size: 4.1rem;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        gap: 3.4rem;
+        margin-bottom: 5.6rem;
+
+        img {
+            width: 9.8rem;
+            height: auto;
+        }
+
+        .logo__text {
+            font-size: 3.4rem;
+
+            b {
+                font-size: 3.4rem;
+            }
+        }
+    }
+}
+
+.thanks__title {
+    max-width: 110rem;
+    margin: 0 auto 6.4rem auto;
+    font-size: 6.5rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.25;
+
+    span {
+        color: $color-accent;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        font-size: 3.2rem;
+        font-weight: 600;
+        line-height: 1.45;
+        margin-bottom: 12.2rem;
+    }
+}
+
+.thanks__btn {
+    min-width: 28.2rem;
+    text-align: center;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+
+    @media screen and (max-width: $breakpoint-md) {
+        transform: translate(0);
+        margin-left: 0;
+        min-width: none;
+        width: 100%;
+    }
+}

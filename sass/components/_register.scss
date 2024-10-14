@@ -1,0 +1,107 @@
+.register {
+    background-color: #08203A;
+    padding-top: 7.9rem;
+    padding-bottom: 11.1rem;
+    color: #FFF;
+
+    background-image: url(../img/register/bg-first.svg), url(../img/register/bg-main-first.webp);
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: bottom left 7rem, bottom right;
+
+    @media screen and (max-width: $breakpoint-md) {
+        padding-top: 5.4rem;
+        padding-bottom: 5.4rem;
+
+        background-image: url(../img/register/bg-main-first-s.webp);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.register-2 {
+    background-image: url(../img/register/bg-second.webp), url(../img/register/bg-main-second.webp);
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: bottom right 7.6rem, bottom left;
+
+    @media screen and (max-width: $breakpoint-md) {
+        background-image: url(../img/register/bg-main-second-s.webp);
+        background-position: bottom right;
+    }
+}
+
+.register-3 {
+    background-image: url(../img/register/bg-third.svg), url(../img/register/bg-main-third.webp);
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: bottom left 11.2rem, bottom left;
+
+    @media screen and (max-width: $breakpoint-md) {
+        background-image: url(../img/register/bg-main-third-s.webp);
+        background-position: bottom right;
+    }
+}
+
+
+.register .container {
+    padding-left: 27.1rem;
+
+    @media screen and (max-width: $breakpoint-md) {
+        padding-left: 0;
+    }
+}
+
+.register__date {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1.5rem;
+    margin-bottom: 2.3rem;
+
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: .9;
+
+    @media screen and (max-width: $breakpoint-md) {
+        font-size: 2rem;
+        line-height: 1.1;
+        margin-bottom: 2.8rem;
+
+        img {
+            width: 2.6rem;
+            height: 2.6rem;
+        }
+    }
+}
+
+.register__title {
+    font-size: 4.4rem;
+    line-height: 1;
+    margin-bottom: 1.2rem;
+
+    @media screen and (max-width: $breakpoint-md) {
+        font-size: 3.2rem;
+        line-height: 1.4;
+        margin-bottom: 3.2rem;
+    }
+}
+
+.register__place {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+    margin-bottom: 2.4rem;
+
+    font-size: 1.5rem;
+    line-height: 1.6;
+
+    @media screen and (max-width: $breakpoint-md) {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 6.2rem;
+    }
+}

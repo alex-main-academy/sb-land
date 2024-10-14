@@ -1,0 +1,85 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 12.8rem;
+    padding-bottom: 3.6rem;
+    overflow: auto;
+    z-index: 5;
+
+    background-image: url(../img/hero/bg-m.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+
+    transition-duration: $anim-time;
+    opacity: 0;
+    visibility: hidden;
+
+    &.is-open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.menu__lines {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 125rem;
+    height: 100%;
+    transform: translate(-50%, 0);
+    padding-left: 7.8rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+
+    @media screen and (max-width: $breakpoint-md) {
+        width: 19.3rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: column;
+        overflow: hidden;
+        padding-left: 0;
+    }
+}
+
+.menu__line {
+    border-left: .1rem solid rgba(255, 255, 255, 0.10);
+    height: 100%;
+
+    &:nth-child(3) {
+        border-right: .1rem solid rgba(255, 255, 255, 0.10);
+
+        @media screen and (max-width: $breakpoint-md) {
+            border-right: none;
+        }
+    }
+}
+
+.menu__navigation {
+    position: relative;
+    z-index: 2;
+    max-width: 32rem;
+    margin: 0 auto;
+}
+
+.menu__list {
+    display: grid;
+    gap: 4.8rem;
+    justify-items: center;
+}
+
+.menu__link {
+    font-size: 2.4rem;
+    line-height: 1;
+    color: #FFF;
+    letter-spacing: .048rem;
+    text-decoration: none;
+}

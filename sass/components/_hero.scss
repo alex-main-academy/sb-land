@@ -1,0 +1,124 @@
+.hero {
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 24.4rem;
+    padding-bottom: 36.3rem;
+    color: $color-light;
+
+    background-image: url(../img/hero/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom left;
+    background-attachment: fixed;
+
+    @media screen and (max-width: $breakpoint-md) {
+        background-image: url(../img/hero/bg-m.webp);
+        background-position: top left;
+
+        padding-top: 18.6rem;
+        padding-bottom: 16.4rem;
+    }
+}
+
+.hero__lines {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 125rem;
+    height: 100%;
+    transform: translate(-50%, 0);
+    padding-left: 7.8rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+
+    @media screen and (max-width: $breakpoint-md) {
+        width: 19.3rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: column;
+        overflow: hidden;
+        padding-left: 0;
+    }
+}
+
+.hero__line {
+    border-left: .1rem solid rgba(255, 255, 255, 0.10);
+    height: 100%;
+
+    &:nth-child(3) {
+        border-right: .1rem solid rgba(255, 255, 255, 0.10);
+
+        @media screen and (max-width: $breakpoint-md) {
+            border-right: none;
+        }
+    }
+}
+
+.hero .container {
+    position: relative;
+    max-width: 125rem;
+    padding: 0 1rem;
+
+    @media screen and (max-width: $breakpoint-md) {
+        max-width: 32rem;
+        padding: 0;
+    }
+
+    @media screen and (max-width: $breakpoint-md) and (orientation: landscape) {
+        max-width: 60rem;
+        padding: 0 1rem;
+    }
+}
+
+.hero__date {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1.5rem;
+    margin-bottom: 4.3rem;
+
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: .9;
+
+    b {
+        font-weight: 600;
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        gap: 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 1.8rem;
+
+        img {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+}
+
+.hero__title {
+    font-size: 8.5rem;
+    max-width: 67.9rem;
+    margin-bottom: 3.1rem;
+
+    @media screen and (max-width: $breakpoint-md) {
+        font-size: 3.6rem;
+        margin-bottom: 2.9rem;
+    }
+}
+
+.hero__desc {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    max-width: 62.4rem;
+    margin-bottom: 5rem;
+
+    @media screen and (max-width: $breakpoint-md) {
+        margin-bottom: 5rem;
+    }
+}

@@ -35,14 +35,18 @@ body {
     margin: 0 auto;
 
     @media screen and (max-width: $breakpoint-md) {
-        max-width: 32rem;
+        max-width: 85vw;
         padding: 0;
     }
 
-    @media screen and (max-width: $breakpoint-md) and (orientation: landscape) {
-        max-width: 60rem;
-        padding: 0 1rem;
-    }
+    // @media screen and (max-width: $breakpoint-md) and (orientation: landscape) {
+    //     max-width: 60rem;
+    //     padding: 0 1rem;
+    // }
+
+    // @media screen and (max-width: $breakpoint-sm) {
+    //     max-width: 85vw;
+    // }
 }
 
 .logo {

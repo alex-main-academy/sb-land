@@ -111,6 +111,10 @@
         grid-template-columns: 100%;
         gap: 3.3rem;
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        grid-template-columns: 85vw;
+    }
 }
 
 .programm__item-2 {
@@ -181,7 +185,7 @@
     margin-bottom: 1rem;
 
     @media screen and (max-width: $breakpoint-md) {
-        margin-bottom: 1.4rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -204,6 +208,7 @@
 
         @media screen and (max-width: $breakpoint-md) {
             margin-left: 0;
+            max-width: 100%;
         }
     }
 
@@ -212,8 +217,9 @@
     }
 
     @media screen and (max-width: $breakpoint-md) {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         margin-bottom: 1rem;
+        max-width: 100%;
     }
 }
 
@@ -313,6 +319,11 @@
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
+
+    @media screen and (max-width: $breakpoint-xs) {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
 
 .programm__btn {

@@ -1150,6 +1150,9 @@ body.is-menu {
     grid-auto-flow: row;
     gap: 2.6rem;
   }
+  .spikers__item:nth-child(2n) {
+    justify-content: stretch;
+  }
 }
 
 .spikers__image {

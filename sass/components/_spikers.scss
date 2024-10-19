@@ -56,6 +56,10 @@
         justify-content: stretch;
         grid-auto-flow: row;
         gap: 2.6rem;
+
+        &:nth-child(2n) {
+            justify-content: stretch;
+        }
     }
 }
 

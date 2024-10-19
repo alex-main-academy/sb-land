@@ -57,3 +57,8 @@ anchorLinks.forEach((link) => {
 // Initial checks
 window.addEventListener("scroll", toggleHeaderClass);
 toggleHeaderClass();
+
+// AOS animation
+AOS.init({
+    once: true,
+});
